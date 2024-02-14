@@ -1,0 +1,21 @@
+{
+  "name": "ecommerceback",
+  "version": "1.0.0",
+  "description": "Backend de mi proyecto final",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ecommerce/server.js",
+    "server": "nodemon ecommerce/server.js"
+  },
+  "author": "Brayan Herrasti Diaz",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
