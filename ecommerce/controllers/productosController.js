@@ -3,7 +3,16 @@ const getProductos = (req, res) =>{
 }
 
 const createProductos = (req, res) =>{
-    res.status(200).json({mensaje: 'Create tareas'})
+
+    const {name, code, category} = req.body
+
+    if(!name || code || category){
+        res.status(400)
+        throw new Error('Faltan datos por completar')
+    }
+    const producto = await Producto.create({
+        
+    })
 }
 
 const updateProductos = (req, res) =>{
